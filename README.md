@@ -4,16 +4,16 @@
 
 ### 修改流程
 
+- 升级eslint版本到8以上
+
+``` javascript
+npm install eslint@8.x --save-dev
+```
+
 - 安装公用规则包
 
 ``` javascript
 npm install eslint-config-tntd --save-dev
-```
-
-- 升级eslint版本到8以上
-
-``` javascript
-npm install eslint@^8.13.0 --save-dev
 ```
 
 - 在package.json 同级目录新增.eslintrc(如已有则修改里面内容即可)
@@ -32,7 +32,12 @@ npm install eslint@^8.13.0 --save-dev
 }
 ```
 
-- vscode安装eslint插件，同时在设置里面配置信息如下，可以在编写代码的时候自动帮忙fixed一些问题
+### 如果已经使用了其他eslint相关，请删除
+1. 删除package.json中关于eslint的包，比如babel-eslint eslint-config-tdued eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react
+2. 删除工程中的 .prettierrc等文件
+
+### vscode配置
+vscode安装eslint插件，同时在设置里面配置信息如下，可以在编写代码的时候自动帮忙fixed一些问题
 
 ``` javascript
 "editor.codeActionsOnSave": {
