@@ -1,10 +1,4 @@
-/*
- * @Descripttion: 基础公用配置
- * @Author: 郑泳健
- * @Date: 2022-04-11 17:32:00
- * @LastEditors: 郑泳健
- * @LastEditTime: 2022-07-18 13:44:58
- */
+
 "use strict";
 module.exports = {
     plugins: ["import", "prettier"],

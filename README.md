@@ -55,26 +55,3 @@ npm run eslint-fixed
 ```
 
 - 执行完以上步骤，eslint会将基础的问题，比如空格/分号/引号/import顺序等问题自动修复，另外一些需要自己手动修复。
-
-### 自定义eslint规则
-
-- 安装插件
-
-``` javascript
-npm install eslint-plugin-tntd-rules --save-dev
-```
-
-- 使用方法,在.eslintrc中配置如下
-
-``` javascript
-{
-    "extends": ["tntd/react"],
-    "plugins": ["tntd-rules"],
-    "rules": {
-        // import 超过3个..建议使用别名
-        "tntd-rules/js-use-alias-path": 1,
-        // interface 名称大写字母开头
-        "tntd-rules/ts-interface-caps": 1
-    }
-}
-```
